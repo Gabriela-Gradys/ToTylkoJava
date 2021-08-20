@@ -15,7 +15,7 @@ public class PracaDomowa2 {
                 System.out.print(" ");
             }
             stars -= 2;
-            System.out.println("");
+            System.out.println();
         }
         // Diamencik
         stars = 13;
@@ -30,7 +30,7 @@ public class PracaDomowa2 {
                 System.out.print(" ");
             }
             stars -= 2;
-            System.out.println("");
+            System.out.println();
         }
         stars = 11;
         for (int j = 0; j < stars; j = j++) {
@@ -44,13 +44,28 @@ public class PracaDomowa2 {
                 System.out.print(" ");
             }
             stars -= 2;
-            System.out.println("");
+            System.out.println();
         }
-        System.out.println("Ile gwiazdek Ci wydrukowac: ");
-        Scanner starMax = new Scanner(System.in);
+        // Gwiazdki dla użytkownika
+        System.out.println("Ile gwiazdek Ci wydrukowac"  + "(wpisz: 1000 aby zobaczyć spadające gwiazdy): ");
+        int starMax = new Scanner(System.in).nextInt();
         try {
-            for (int i = 14; i > starMax.nextInt(); i--) {
-                System.out.print("*");
+            if (starMax == 1000) {
+                for (int j = 0; j < 2; j = j++) {
+                    for (int i = 1; i < 13; i += 2) {
+                        System.out.print(" ");
+                    }
+                    for (int i = 14; i > 13; i--) {
+                        System.out.print("*");
+                    }
+                    for (int i = 1; i < 13; i++) {
+                        System.out.print(" ");
+                    }
+                }
+            } else {
+                for (int i = 0; i <= starMax; i++) {
+                    System.out.print("*");
+                }
             }
         } catch (Exception e) {
             System.out.println("Niepoprawna wartość");
