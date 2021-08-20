@@ -4,44 +4,35 @@ public class PracaDomowa2 {
     public static void main(String[] args) {
         int stars = 13;
         // Choinka
-        for (int j = 0; j < stars; j = j++) {
+        for (int j = 0; j <= 13; j = j + 2) {
             for (int i = 1; i < stars; i += 2) {
                 System.out.print(" ");
             }
             for (int i = 14; i > stars; i--) {
                 System.out.print("*");
-            }
-            for (int i = 1; i < stars; i++) {
-                System.out.print(" ");
             }
             stars -= 2;
             System.out.println();
         }
         // Diamencik
         stars = 13;
-        for (int j = 0; j < stars; j = j++) {
+        for (int j = 0; j <= 13; j = j + 2) {
             for (int i = 1; i < stars; i += 2) {
                 System.out.print(" ");
             }
             for (int i = 14; i > stars; i--) {
                 System.out.print("*");
             }
-            for (int i = 1; i < stars; i++) {
-                System.out.print(" ");
-            }
             stars -= 2;
             System.out.println();
         }
         stars = 11;
-        for (int j = 0; j < stars; j = j++) {
-            for (int i = 13; i > stars; i -= 2) {
+        for (int j = 0; j <= 11; j = j + 2) {
+            for (int i = 12; i > stars; i -= 2) {
                 System.out.print(" ");
             }
             for (int i = 0; i < stars; i++) {
                 System.out.print("*");
-            }
-            for (int i = 14; i > stars; i--) {
-                System.out.print(" ");
             }
             stars -= 2;
             System.out.println();
