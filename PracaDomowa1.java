@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PracaDonowa1 {
+public class PracaDomowa1 {
     public static void main(String[] args) {
         Scanner wprowadz = new Scanner(System.in);
         System.out.println("Wprowadź swój wiek:");
